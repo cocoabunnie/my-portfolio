@@ -6,8 +6,6 @@ import { createClient } from 'contentful'
 
 export default function ProjectDetailPage({ project }: any) {
   const { title, about, technologyStack } = project[0].fields
-  console.log(project)
-  console.log('ARRAY: ', technologyStack)
 
   return (
     <div className="text-white font-mono">
