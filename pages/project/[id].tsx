@@ -21,8 +21,8 @@ export default function ProjectDetailPage({ project }: any) {
 
 export async function getStaticPaths() {
   var client = createClient({
-    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID ?? '',
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN ?? '',
   })
 
   const res = await client.getEntries({ content_type: 'portfolioProject' })
@@ -39,8 +39,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: any) {
   var client = createClient({
-    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID ?? '',
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN ?? '',
   })
 
   const { items } = await client.getEntries({
