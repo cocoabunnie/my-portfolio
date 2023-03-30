@@ -12,9 +12,11 @@ export default function ProjectDetailPage({ project }: any) {
   return (
     <div className="text-white font-mono">
       <NavigationBar />
-      <ProjectTitle title={title} />
-      <AboutProject about={about} />
-      <ProjectTechStack data={technologyStack} />
+      <div className="mx-[20px] text-[20px]">
+        <ProjectTitle title={title} />
+        <AboutProject about={about} />
+        <ProjectTechStack data={technologyStack} />
+      </div>
     </div>
   )
 }
