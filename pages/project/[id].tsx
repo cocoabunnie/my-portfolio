@@ -4,6 +4,11 @@ import ProjectTitle from '@/components/projectPage/projectTitle'
 import NavigationBar from '@/components/sections/nav'
 import { createClient } from 'contentful'
 
+var client = createClient({
+  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+})
+
 export default function ProjectDetailPage({ project }: any) {
   const { title, about, technologyStack } = project[0].fields
 
@@ -20,11 +25,6 @@ export default function ProjectDetailPage({ project }: any) {
 }
 
 export async function getStaticPaths() {
-  const client = createClient({
-    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID ?? '',
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN ?? '',
-  })
-
   const res = await client.getEntries({ content_type: 'portfolioProject' })
 
   const paths = res.items.map((project: any) => ({
@@ -37,12 +37,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }: any) {
-  const client = createClient({
-    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID ?? '',
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN ?? '',
-  })
-
+export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
     content_type: 'portfolioProject',
     'fields.slug': params.id,
