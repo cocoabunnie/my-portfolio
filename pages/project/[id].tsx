@@ -10,7 +10,7 @@ export default function ProjectDetailPage({ project }: any) {
   return (
     <div className="text-white font-mono">
       <NavigationBar />
-      <div className="mx-[20px] text-[20px]">
+      <div className="mx-20 text-[20px]">
         <ProjectTitle title={title} />
         <AboutProject about={about} />
         <ProjectTechStack data={technologyStack} />
