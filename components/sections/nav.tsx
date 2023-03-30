@@ -1,8 +1,12 @@
+import Link from 'next/link'
+
 export default function NavigationBar() {
   return (
     <div className="font-mono fixed flex flex-row pt-2 py-[10px] w-screen z-[1] bg-black text-white">
       <div className="flex flex-row gap-10 w-full justify-start pl-10">
-        <p className="uppercase">Brianna Duvivier 🐶💕</p>
+        <Link className="uppercase" href="/">
+          Brianna Duvivier 🐶💕
+        </Link>
       </div>
       <div className="flex flex-row gap-10 w-full justify-end pr-10">
         <a
