@@ -9,21 +9,21 @@ export default function NavigationBar() {
         </Link>
       </div>
       <div className="flex flex-row gap-10 w-full justify-end pr-10">
-        <a
+        <Link
           className="cursor-pointer px-2 py-1 rounded-xl hover:bg-pink"
-          href="#projects"
+          href="/#projects"
         >
           Projects
-        </a>
+        </Link>
         <p className="cursor-pointer px-2 py-1 rounded-xl hover:bg-pink">
           Resume
         </p>
-        <a
+        <Link
           className="cursor-pointer px-2 py-1 rounded-xl hover:bg-pink"
-          href="#about"
+          href="/#about"
         >
           About
-        </a>
+        </Link>
       </div>
     </div>
   )
