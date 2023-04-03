@@ -1,7 +1,6 @@
 import ProjectSquare from '../projectSquare'
 
-export default function Projects({ project }: any) {
-  console.log('PARAMS: ', project)
+export default function Projects() {
   return (
     <div
       id="projects"
