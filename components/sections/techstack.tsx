@@ -21,7 +21,7 @@ export default function TechStack() {
   ]
 
   return (
-    <div className="font-mono h-[calc(80vh)] w-screen bg-black">
+    <div className="overscroll-none font-mono h-[calc(80vh)] w-screen bg-black">
       <p className="flex font-bold text-pink text-[40px] uppercase justify-center items-center w-screen">
         Technology Stack
       </p>

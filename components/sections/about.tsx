@@ -2,7 +2,7 @@ export default function AboutMe() {
   return (
     <div
       id="about"
-      className="font-mono h-[calc(50vh)] w-screen bg-black text-white"
+      className="overscroll-none font-mono h-[calc(50vh)] w-screen bg-black text-white"
     >
       <div className="flex flex-row justify-center items-center">
         <img
