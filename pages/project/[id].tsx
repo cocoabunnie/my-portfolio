@@ -1,9 +1,9 @@
+import Layout from '@/components/Layout'
 import AboutProject from '@/components/projectPage/aboutProject'
 import LinkToProject from '@/components/projectPage/linkToProject'
 import ProjectSlideShow from '@/components/projectPage/projectSlideshow'
 import ProjectTechStack from '@/components/projectPage/projectTechStack'
 import ProjectTitle from '@/components/projectPage/projectTitle'
-import NavigationBar from '@/components/sections/nav'
 import { createClient } from 'contentful'
 
 export default function ProjectDetailPage({ project }: any) {
@@ -11,16 +11,15 @@ export default function ProjectDetailPage({ project }: any) {
     project[0].fields
 
   return (
-    <div className="text-white font-mono">
-      <NavigationBar />
-      <div className="flex flex-col mx-20 text-[20px]">
+    <Layout>
+      <div className="flex flex-col mx-20 text-[20px] text-white font-mono">
         <ProjectTitle title={title} />
         <ProjectSlideShow slug={slug} images={slideshowImages} />
         <AboutProject about={about} />
         {link && <LinkToProject link={link} />}
         <ProjectTechStack data={technologyStack} />
       </div>
-    </div>
+    </Layout>
   )
 }
 
