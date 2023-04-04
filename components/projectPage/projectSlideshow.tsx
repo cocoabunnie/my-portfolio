@@ -12,7 +12,6 @@ export default function ProjectSlideShow({ images, slug }: any) {
           return (
             <div key={image}>
               <img src={`/slideshows/${slug}/` + image} alt="image" />
-              <p className="legend">Legend 1</p>
             </div>
           )
         })}
