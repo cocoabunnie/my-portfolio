@@ -1,4 +1,5 @@
 import AboutProject from '@/components/projectPage/aboutProject'
+import LinkToProject from '@/components/projectPage/linkToProject'
 import ProjectSlideShow from '@/components/projectPage/projectSlideshow'
 import ProjectTechStack from '@/components/projectPage/projectTechStack'
 import ProjectTitle from '@/components/projectPage/projectTitle'
@@ -6,20 +7,17 @@ import NavigationBar from '@/components/sections/nav'
 import { createClient } from 'contentful'
 
 export default function ProjectDetailPage({ project }: any) {
-  const { title, about, technologyStack, slug, slideshowImages } =
+  const { title, about, technologyStack, slug, slideshowImages, link } =
     project[0].fields
-  const dataArray = [
-    '/images/podcastCover.png',
-    '/images/pkCover.png',
-    '/images/gaiaCover.png',
-  ]
+
   return (
     <div className="text-white font-mono">
       <NavigationBar />
-      <div className="mx-20 text-[20px]">
+      <div className="flex flex-col mx-20 text-[20px]">
         <ProjectTitle title={title} />
         <ProjectSlideShow slug={slug} images={slideshowImages} />
         <AboutProject about={about} />
+        {link && <LinkToProject link={link} />}
         <ProjectTechStack data={technologyStack} />
       </div>
     </div>
