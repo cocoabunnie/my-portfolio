@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="font-mono w-screen h-screen bg-black text-white">
+    <div className="relative flex font-mono w-screen h-screen text-white">
       <div className="absolute w-full left-0 top-60 pl-32 py-16 text-left bg-white text-black">
         <p className="font-bold text-pink text-[70px] uppercase tracking-widest">
           Brianna Duvivier

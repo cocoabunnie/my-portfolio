@@ -4,10 +4,10 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="overscroll-none flex flex-col font-mono justify-center items-center h-full w-screen bg-black pt-10 pb-10"
+      className="flex flex-col overflow-y-clip font-mono justify-center items-center h-screen w-screen bg-black pt-10 pb-10"
     >
       <p className="text-pink font-bold text-[40px] my-5 uppercase">Projects</p>
-      <div className="overscroll-none grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4">
         <ProjectSquare
           imageSrc="/images/podcastCover.png"
           slug="podcast-website"
