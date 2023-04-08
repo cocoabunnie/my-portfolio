@@ -2,9 +2,9 @@ export default function AboutMe() {
   return (
     <div
       id="about"
-      className="overscroll-none font-mono h-fit w-screen bg-black text-white"
+      className="overscroll-none font-mono h-fit w-screen bg-black text-white mb-10"
     >
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-col lg:flex-row justify-center items-center">
         <img
           className="w-[400px] h-auto"
           src="/images/selfIllustration.png"
@@ -14,7 +14,7 @@ export default function AboutMe() {
           <p className="flex text-[40px] text-pink font-bold uppercase justify-center items-center w-full">
             About Me
           </p>
-          <p>
+          <p className="text-center lg:text-left">
             This is just filler text but this is basically gonna talk a little
             bit about
             <br />
