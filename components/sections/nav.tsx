@@ -14,14 +14,14 @@ export default function NavigationBar() {
         'font-mono fixed flex flex-row items-center w-screen z-[1] bg-black text-white'
       }
     >
-      <div className="flex flex-row gap-10 w-full justify-start items-center pl-10">
+      <div className="flex grow justify-start items-center pl-10">
         <Link className="uppercase" href="/">
           Brianna Duvivier 🐶💕
         </Link>
       </div>
 
       {/* Desktop and Tablet */}
-      <div className="hidden md:flex flex-row gap-10 w-full justify-end pr-10">
+      <div className="hidden md:flex flex-row w-fit gap-10 justify-end pr-10">
         <Link
           className="cursor-pointer px-2 py-1 rounded-xl hover:bg-pink"
           href="/#projects"
@@ -40,12 +40,12 @@ export default function NavigationBar() {
       </div>
 
       {/* Mobile */}
-      <div className="md:hidden flex w-screen justify-end">
-        <button className="z-[2] pr-10" onClick={() => toggleMenu()}>
+      <div className="md:hidden flex w-fit justify-end">
+        <button className="z-[2] pr-10 w-fit" onClick={() => toggleMenu()}>
           {!isOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 my-2"
+              className="h-9 w-9 my-2"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -58,7 +58,7 @@ export default function NavigationBar() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 my-2"
+              className="h-9 w-9 my-2"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
