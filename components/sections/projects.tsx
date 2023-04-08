@@ -7,7 +7,7 @@ export default function Projects() {
       className="flex flex-col overflow-y-clip font-mono justify-center items-center h-full w-screen bg-black pt-10 pb-10"
     >
       <p className="text-pink font-bold text-[40px] my-5 uppercase">Projects</p>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <ProjectSquare
           imageSrc="/images/podcastCover.png"
           slug="podcast-website"

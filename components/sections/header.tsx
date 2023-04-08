@@ -32,7 +32,7 @@ export default function Header() {
       </div>
 
       <img
-        className="absolute top-60 right-10 w-[calc(40vw)] h-auto justify-end"
+        className="absolute top-60 right-0 w-[calc(40vw)] h-auto justify-end"
         src="/images/selfIllustration.png"
         alt=""
       />
