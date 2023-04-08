@@ -8,7 +8,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <div className="min-h-[100vh] overflow-x-hidden scroll-smooth">
-    <header id="home" className="fixed mt-32 lg:mt-0 z-10">
+    <header id="home" className="fixed mt-0 lg:mt-0 z-10">
       <NavigationBar />
     </header>
     <div>{children}</div>
