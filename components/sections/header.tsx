@@ -40,7 +40,7 @@ export default function Header() {
       </div>
 
       <Image
-        className="animate-slideInFromRight absolute top-60 -right-[50px] w-[calc(70vw)] md:top-72 lg:top-60 right-0 md:w-[calc(45vw)] h-auto justify-end"
+        className="animate-slideInFromRight absolute top-60 -right-10 w-[calc(70vw)] md:top-72 lg:top-60 md:right-0 md:w-[calc(45vw)] h-auto justify-end"
         src="/images/meOnABeanBag.png"
         alt=""
         width={10000}
