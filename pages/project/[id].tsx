@@ -12,7 +12,7 @@ export default function ProjectDetailPage({ project }: any) {
 
   return (
     <Layout>
-      <div className="flex flex-col mx-20 text-[20px] text-white font-mono">
+      <div className="flex flex-col mx-5 sm:mx-20 text-[20px] text-white font-mono">
         <ProjectTitle title={title} />
         <ProjectSlideShow slug={slug} images={slideshowImages} />
         <AboutProject about={about} />

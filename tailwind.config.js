@@ -41,7 +41,7 @@ module.exports = {
         },
       },
       animation: {
-        jiggle: 'jiggle 0.5s ease-in-out 5s infinite',
+        jiggle: 'jiggle 0.5s ease-in-out infinite',
         wiggle: 'wiggle 1s ease-in-out infinite',
         mobileMenuSlide: 'slideInFromLeft 0.3s ease-out',
         slideInFromLeftFast: 'slideInFromLeft 1.5s ease-out',
