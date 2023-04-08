@@ -13,6 +13,16 @@ module.exports = {
     },
     extend: {
       keyframes: {
+        jiggle: {
+          '0%': { transform: 'translateX(-3px)' },
+          '50%': { transform: 'translateX(3px)' },
+          '100%': { transform: 'translateX(-3px)' },
+        },
+        wiggle: {
+          '0%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(10deg)' },
+          '100%': { transform: 'rotate(-10deg)' },
+        },
         slideInFromLeft: {
           '0%': {
             transform: 'translateX(-100%)',
@@ -31,6 +41,8 @@ module.exports = {
         },
       },
       animation: {
+        jiggle: 'jiggle 0.5s ease-in-out 5s infinite',
+        wiggle: 'wiggle 1s ease-in-out infinite',
         mobileMenuSlide: 'slideInFromLeft 0.3s ease-out',
         slideInFromLeftFast: 'slideInFromLeft 1.5s ease-out',
         slideInFromLeftMedium: 'slideInFromLeft 1.7s ease-out',
