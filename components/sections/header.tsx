@@ -13,7 +13,7 @@ export default function Header() {
           dog enthusiast
         </p>
 
-        <p className="block md:hidden animate-slideInFromLeftMedium text-[calc(3vw)] md:text-[calc(1.5vw)] mb-4">
+        <p className="block md:hidden animate-slideInFromLeftMedium text-[calc(3vw)] mb-4">
           Full Stack Developer, creative
           <br />
           technologist and dog enthusiast
@@ -21,7 +21,7 @@ export default function Header() {
 
         <div className="animate-slideInFromLeftSlow flex flex-row justify-start gap-4 my-3">
           <a
-            className="border border-black rounded-xl py-2 px-1 bg-black text-[calc(3.5vw)] md:text-[calc(1.5vw)] lg:text-[calc(1vw)] text-white hover:bg-pink hover:text-white hover:border-pink"
+            className="border border-black rounded-xl py-2 px-1 bg-black text-[calc(3.5vw)] md:text-[calc(1.5vw)] lg:text-[calc(1.5vw)] text-white hover:bg-pink hover:text-white hover:border-pink"
             href={'https://github.com/cocoabunnie'}
             target={'_blank'}
             rel="noreferrer"
@@ -29,7 +29,7 @@ export default function Header() {
             GitHub
           </a>
           <a
-            className="border border-black rounded-xl py-2 px-1 bg-black text-[calc(3.5vw)] md:text-[calc(1.5vw)] lg:text-[calc(1vw)] text-white hover:bg-pink hover:text-white hover:border-pink"
+            className="border border-black rounded-xl py-2 px-1 bg-black text-[calc(3.5vw)] md:text-[calc(1.5vw)] lg:text-[calc(1.5vw)] text-white hover:bg-pink hover:text-white hover:border-pink"
             href={'https://www.linkedin.com/in/duvbri/'}
             target={'_blank'}
             rel="noreferrer"
