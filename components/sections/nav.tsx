@@ -72,7 +72,7 @@ export default function NavigationBar() {
         </button>
 
         {isOpen && (
-          <div className="animate-slideInFromLeftFast absolute flex flex-col justify-center items-center gap-10 w-screen h-screen bg-pink z-[1]">
+          <div className="animate-mobileMenuSlide absolute flex flex-col justify-center items-center gap-10 w-screen h-screen bg-pink z-[1]">
             <Link
               className="cursor-pointer text-[calc(8vw)] px-2 py-1 rounded-xl hover:bg-pink"
               href="/#projects"

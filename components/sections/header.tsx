@@ -13,7 +13,7 @@ export default function Header() {
           dog enthusiast
         </p>
 
-        <p className="block md:hidden animate-slideInFromLeftMedium text-[calc(2.8vw)] md:text-[calc(1.5vw)] mb-4">
+        <p className="block md:hidden animate-slideInFromLeftMedium text-[calc(3vw)] md:text-[calc(1.5vw)] mb-4">
           Full Stack Developer, creative
           <br />
           technologist and dog enthusiast
@@ -40,7 +40,7 @@ export default function Header() {
       </div>
 
       <Image
-        className="animate-slideInFromRight absolute top-60 -right-10 w-[calc(70vw)] md:top-72 lg:top-60 right-0 md:w-[calc(45vw)] h-auto justify-end"
+        className="animate-slideInFromRight absolute top-60 -right-[42px] w-[calc(70vw)] md:top-72 lg:top-60 right-0 md:w-[calc(45vw)] h-auto justify-end"
         src="/images/meOnABeanBag.png"
         alt=""
         width={10000}

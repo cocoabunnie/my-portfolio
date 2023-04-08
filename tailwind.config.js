@@ -31,6 +31,7 @@ module.exports = {
         },
       },
       animation: {
+        mobileMenuSlide: 'slideInFromLeft 0.3s ease-out',
         slideInFromLeftFast: 'slideInFromLeft 1.5s ease-out',
         slideInFromLeftMedium: 'slideInFromLeft 1.7s ease-out',
         slideInFromLeftSlow: 'slideInFromLeft 1.9s ease-out',
