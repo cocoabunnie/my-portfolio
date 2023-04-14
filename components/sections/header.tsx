@@ -1,8 +1,14 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function Header() {
+  const [loading, setLoading] = useState<boolean>(true)
+
   return (
     <div className="relative flex font-mono h-[calc(74vh)] sm:h-[calc(84vh)] md:w-screen md:h-screen text-white">
+      {loading && (
+        <p className="mt-[100px] text-[20px] w-full h-full">LOADING...</p>
+      )}
       <div className="w-full items-center absolute left-0 top-52 md:top-60 pl-5 pt-5 pb-20 md:pl-32 md:py-16 text-left bg-white text-black">
         <p className="animate-slideInFromLeftFast md:pb-0 font-bold text-pink text-[calc(8vw)] md:text-[calc(5vw)] uppercase tracking-widest">
           Brianna Duvivier
@@ -45,6 +51,9 @@ export default function Header() {
         alt=""
         width={10000}
         height={10000}
+        onLoadingComplete={() => {
+          setLoading(false)
+        }}
       />
     </div>
   )
