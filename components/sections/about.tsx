@@ -14,17 +14,16 @@ export default function AboutMe() {
           <p className="flex text-[40px] text-pink font-bold uppercase justify-center items-center w-full">
             About Me
           </p>
-          <p className="text-center lg:text-left">
-            This is just filler text but this is basically gonna talk a little
-            bit about
-            <br />
-            me... how I got into programming, my backstory/history, etc. 🙃 And
-            the
-            <br />
-            picture might be an actual picture of me or an illustration
-            depending
-            <br />
-            on how I&apos;m feeling when I get to working on that part.
+          <p className="text-center lg:text-left max-w-[700px] mx-10 md:mx-0">
+            My passion for programming ignited at the age of 11, when I
+            developed my first computer game, &quot;Space Puppies&quot;.
+            Pursuing my love for technology, I earned a degree in Computer
+            Science. As a problem-solver, I enjoy creating products that solve
+            real-world issues. When I&apos;m not coding, I love to spend my free
+            time reading, crocheting, and bonding with my dog Mellow. I believe
+            technology can have a positive impact on society, and I continuously
+            learn and stay up-to-date with new technologies. I strive to use my
+            skills to make a meaningful impact on the world.
           </p>
         </div>
       </div>
