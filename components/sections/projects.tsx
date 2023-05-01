@@ -14,6 +14,10 @@ export default function Projects() {
         />
         <ProjectSquare imageSrc="/images/gaiaCover.png" slug="gaia-tool" />
         <ProjectSquare imageSrc="/images/pkCover.png" slug="penelopes-key" />
+        <ProjectSquare
+          imageSrc="/images/longevityCover.png"
+          slug="longevity-prize"
+        />
       </div>
     </div>
   )
