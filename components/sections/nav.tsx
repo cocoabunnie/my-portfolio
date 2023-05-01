@@ -10,6 +10,12 @@ export default function NavigationBar() {
     setIsOpen(!isOpen)
   }
 
+  const download = () => {
+    const fileUrl = '/path/to/your/file.pdf'
+    const fileName = 'resume.pdf'
+    //download(fileUrl, fileName, 'application/pdf')
+  }
+
   return (
     <div
       className={
