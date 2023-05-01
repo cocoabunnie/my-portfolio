@@ -15,9 +15,11 @@ export default function TechStack() {
   const backendData = [
     { name: 'Firebase', imageSrc: '/icons/firebaseIcon.png' },
     { name: 'MongoDB', imageSrc: '/icons/mongoIcon.svg' },
+    { name: 'Airtable', imageSrc: '/icons/airtableIcon.png' },
     { name: 'NodeJS', imageSrc: '/icons/nodeIcon.png' },
     { name: 'SQL', imageSrc: '/icons/sqlIcon.png' },
     { name: 'PostgreSQL', imageSrc: '/icons/postgresIcon.png' },
+    { name: 'Contentful', imageSrc: '/icons/contentfulIcon.png' },
   ]
 
   return (
